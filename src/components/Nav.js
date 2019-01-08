@@ -4,7 +4,7 @@ const Nav = () => {
 	return (
 		<div>
 			<nav>
-  				<a className="nav" href="/">Home</a>
+  				<a className="nav" href="/Github-profile-search-engine/">Home</a>
   			</nav>
 		</div>
 		)
