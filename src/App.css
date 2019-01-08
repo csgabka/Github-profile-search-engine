@@ -59,5 +59,9 @@ button:hover {
   h1 {
     font-size: 7vw;
   }
+
+  .card {
+    width: 90%;
+  }
 }
 
