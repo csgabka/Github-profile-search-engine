@@ -28,7 +28,7 @@ class Profile extends React.Component {
 		const { profile } = this.props;
 		const { showFullProfile } = this.state;
 		return (
-			<div>
+			<div className="profile-container">
 			<ReactCSSTransitionGroup
               transitionName="fade"
               transitionAppear={true}
@@ -55,17 +55,17 @@ class Profile extends React.Component {
 					              transitionEnter={false}
 					              transitionLeave={false}>
 									<div>
-					    				<div>Login id: {profile.id}</div>
-										<div>User level: {profile.type}</div>
-										<div>Full name: {(profile.name===null) ? "unknown" : profile.name}</div>
-										<div>Company: {(profile.company===null) ? "unknown" : profile.company}</div>
-										<div>Location: {(profile.location===null) ? "unknown" : profile.location}</div>
-										<div>E-mail address: {(profile.email===null) ? "unknown" : profile.email}</div>
-										<div>Is {profile.login} looking for a job? {(profile.hireable===null) ? "No" : "Yes"}</div>
-										<div>Number of public repositories: {profile.public_repos}</div>
-										<div>Followers: {profile.followers}</div>
-										<div>Following: {profile.following}</div>
-										<div>Profile created on: {this.formatTime(profile.created_at)}</div>
+					    				<div><label>Login id:</label> {profile.id}</div>
+										<div><label>User level:</label> {profile.type}</div>
+										<div><label>Full name:</label> {(profile.name===null) ? "unknown" : profile.name}</div>
+										<div><label>Company:</label> {(profile.company===null) ? "unknown" : profile.company}</div>
+										<div><label>Location:</label> {(profile.location===null) ? "unknown" : profile.location}</div>
+										<div><label>E-mail address:</label> {(profile.email===null) ? "unknown" : profile.email}</div>
+										<div><label>Is {profile.login} looking for a job?</label> {(profile.hireable===null) ? "No" : "Yes"}</div>
+										<div><label>Number of public repositories:</label> {profile.public_repos}</div>
+										<div><label>Followers:</label> {profile.followers}</div>
+										<div><label>Following:</label> {profile.following}</div>
+										<div><label>Profile created on:</label> {this.formatTime(profile.created_at)}</div>
 									</div>
 									</ReactCSSTransitionGroup>
 						) : ( null ) }
